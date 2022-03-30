@@ -47,6 +47,7 @@ header .navbar_menu li:hover {
 header .icons {
   display: flex;
   padding-left: 0;
+  margin: 0;
 }
 
 header .icons li {
@@ -66,18 +67,22 @@ header .toggleBtn {
 
   header .navbar {
     width: 100%;
+    max-height: 0;
+    visibility: hidden;
+    transition: all 1s;
   }
 
   header .navbar .navbar_menu {
     flex-direction: column;
     text-align: center;
-    display: none;
+    visibility: hidden;
   }
 
   header .icons {
     width: 100%;
     justify-content: center;
-    display: none;
+    visibility: hidden;
+    max-height: 0;
   }
 
   header .toggleBtn {
@@ -88,8 +93,11 @@ header .toggleBtn {
     top: 18px;
   }
 
+  header .navbar.active,
   header .navbar_menu.active,
   header .icons.active {
-    display: flex;
+    visibility: visible;
+    max-height: 100vh;
+    transition: all 1s;
   }
 }
