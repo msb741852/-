@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: rgb(22, 71, 73);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+}
+
+header .logo .fa-accusoft {
+  font-size: 24px;
+  color: rgb(219, 74, 74);
+}
+
+header .logo .logo_titile {
+  font-size: 20px;
+}
+
+header .navbar .navbar_menu {
+  display: flex;
+  padding-left: 0;
+}
+
+header .navbar_menu li {
+  padding: 8px 12px;
+  color: white;
+}
+
+header .navbar_menu li:hover {
+  background-color: rgb(219, 161, 119);
+  border-radius: 4px;
+}
+
+header .icons {
+  display: flex;
+  padding-left: 0;
+}
+
+header .icons li {
+  padding: 8px;
+  color: white;
+}
+
+header .toggleBtn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .navbar {
+    width: 100%;
+  }
+
+  header .navbar .navbar_menu {
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+
+  header .icons {
+    width: 100%;
+    justify-content: center;
+    display: none;
+  }
+
+  header .toggleBtn {
+    color: white;
+    display: flex;
+    position: absolute;
+    right: 28px;
+    top: 18px;
+  }
+
+  header .navbar_menu.active,
+  header .icons.active {
+    display: flex;
+  }
+}
