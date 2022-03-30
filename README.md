@@ -1,4 +1,4 @@
-반응형 header
+<h2>반응형 header</h2>
 
 display : flex
 @media screen 를 활용한 반응형 header
