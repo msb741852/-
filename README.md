@@ -32,3 +32,10 @@ BY THE WAY
 - vh 단위를 넣었더니 transition이 적용은 되지만 말그대로 vh단위는 'viewport height'이기에 메뉴의 영역만 나오는게 아니고 오버되서 나온다.
 - height : auto 는 메뉴 높이만큼만 나오지만 transition이 되지 않았다.
 - max-height, transition에 대해 공부할 것
+
+
+RESULT  
+
+  
+
+![ezgif-1-95d2fb9a81](https://user-images.githubusercontent.com/75235831/160787969-afec0889-3370-4a01-807b-4874094522bb.gif)
